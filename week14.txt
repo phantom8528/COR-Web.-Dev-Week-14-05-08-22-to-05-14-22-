@@ -1,0 +1,57 @@
+-------------------------05/08/22---------------------------------
+React - Is a JavaScript Library that helps you write complex
+front-end applications
+* creating reusable UI components 
+* Managing and displaying data
+* Render arrays of components using .map()
+Influenced the design of other libraries like angular and vue.JavaScript
+
+STARTING YOUR FIRST REACT PROJECT:
+1. RUN "npx create-react-app greeter-app" in your terminal
+2. cd into greeter-app
+3. enter "yarn start" to star the dev server
+    - correction: the above command doesn't work. Instead use "npm start"
+4. Delete the <header> tag and replace it with an <h1> tag that says Hellp React
+    - This will return some warnings, but it should still run 
+5. Go into src/index.css and change the h1 color to Red.
+    - This should change the color to Red in react 
+6. Go back into src/index.css and create .greeting and add the attribut blue
+7. Go back into App.js and create class=greeting inside the h1 tag
+
+CREATING A CUSTOM COMPONENT 
+Creating custom components is what react does really well
+1. cd into src
+2. mkdir components
+3. cd into components
+4. touch Greeter.js
+NOTE: a Class component must have two things
+     - extend React.component
+     - a render() methond that returns JSX
+
+USING A CUSTOM COMPONENT
+In ordr to import you must do the following: 
+    - importing Greeter
+    - Wrting a Greeter JSX tag
+1. Go back to App.js
+2. import Greeter from the components folder
+3. Create a Greeter tag: <Greeter></Greeter>
+4. Reload in the browser and it should show up in Red
+
+REPEATING A COMPONENT
+Simply copy and paste the Greeter tag several times in order to repeat itself
+
+PASSING PROPS
+To make each greeting say hello to different people, we'll do the following
+
+Reading: React DevTools
+----------------------------
+
+A set of tools designed to inspect and and debug React components
+It is available thorugh chrome extensions and a standalone npm app
+
+INSTALLATION: Install the chrome extension
+
+INSPECTING COMPONENTS: 
+
+Reading: Using create-react-app
+--------------------------------------
