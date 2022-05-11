@@ -1,4 +1,4 @@
--------------------------05/08/22---------------------------------
+::::::::::::::::::::::::::::::::05/08/22:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 React - Is a JavaScript Library that helps you write complex
 front-end applications
 * creating reusable UI components 
@@ -55,3 +55,32 @@ INSPECTING COMPONENTS:
 
 Reading: Using create-react-app
 --------------------------------------
+
+::::::::::::::::::::::::::::::::05/09/22:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+FOLLOW-ALONG IN-CLASS REACT EXERCISE
+
+1. Create a folder for your react project, cd in and start the project
+- mkdir in-class-react/
+- cd in-class-react
+- npx create-react-app practice_react_app
+
+2. cd into practice_react_app
+
+NOTE: Mui.com - prebuilt javascript components
+    - Question: is Mui.com exclusive to React?
+
+::::::::::::::::::::::::::::::::05/11/22:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+What is State:
+    - Refers to the data uused by your app.
+    - It is an integer that can be increased or decreased 
+Two ways to manage state in React
+    - Classes
+    - Hooks
+Settintg Initial State in the constructor()
+
+
+
+
+
+
