@@ -79,6 +79,19 @@ Two ways to manage state in React
     - Hooks
 Settintg Initial State in the constructor()
 
+::::::::::::::::::::::::::::::::05/12/22:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+TRANSLATING this.state.text
+    1. install rot-thirteen npm module: this will return the rot13 version of the text
+    - there are two options for translation: 
+        * store the translation in a state
+        * do the translation when we interpolate into our JSX
+    OPTION 1: Translation at time of interpolation
+    1. add an additional <p> for the rot13 version of our input text
+
+    
+
+
 
 
 
