@@ -27,9 +27,13 @@ class Counter extends React.Component {
                 <button>+</button> */}
 
                 {/* Update Render method adding onClick prop to each button */}
-                <button onClick={this._decrementerCounter}>-</button>
+                {/* <button onClick={this._decrementerCounter}>-</button>
                 <span>{this.state.count}</span>
-                <button onClick={this._incrementCounter}>+</button>
+                <button onClick={this._incrementCounter}>+</button> */}
+
+                <Decrement handleClick={this._decrementerCounter} />
+                <Output count={this.state.count} />
+                <Increment handleClick={this._incrementCounter} />
             </div>
         );
     }
