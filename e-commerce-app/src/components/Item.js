@@ -1,13 +1,39 @@
 
 import React from 'react';
+import PropTypes from 'prop-types';
+import './Item.css';
 
-class Item extends React.Component{
-    render(){
-        return(
-            <h1>This is an Item</h1>
 
-        )
-    }
+
+const Item = ({item, children}) => {
+    // let withDeimal = parseFloat(item.price);
+    return(
+        <div className='Item'>
+            {/* ITEM LEFT */}
+            <div className='Item-left'>
+                <div className='Item-image'></div>
+                <div className='Item-title'>
+                    {item.name}
+                </div>
+                <div className='Item-description'>
+                    {item.description}
+                </div>
+            </div>
+            {/* ITEM RIGHT */}
+            <div className='Item-right'>
+                <div className='Item-price'>
+                    ${item.price}
+                </div>
+                {/* <button className='Item-addToCart'>Add to Cart</button> */}
+                {children}
+            </div>
+    </div>
+    )
+}
+
+Item.propTypes = {
+    item: PropTypes.object.isRequired,
+    // onAddToCart: PropTypes.func.isRequired
 }
 
 export default Item;
