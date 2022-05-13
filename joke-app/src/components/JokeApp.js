@@ -1,34 +1,33 @@
-import { response } from 'express';
 import React from 'react';
 
-class JokeApp extends React.Component{
-    
-    constructor(props){
+class JokeApp extends React.Component {
+    constructor(props) {
         super(props);
         this.state = {
-            joke: ' '
-        }
+            joke: ' ',
+            isLoading: false
+        };
     }
     
     render() {
-        return(
+        return (
             <div>
-                <p>
-                    {/* This is where the joke will go */}
-                    {this.state.joke}
-                    <button>New Joke</button>
-                </p>
+                <p>{this.state.joke}</p>
+                {/* {this.state.isLoading && '...Loading Joke'}
+                {this.state.isLoading === false && this.state.joke} */}
+                <button onClick={this._fetchJoke}>New Joke</button>
             </div>
         );
     }
 
-    _fetchJoke(){
+    _fetchJoke = () => {
         const url = 'https://api.chucknorris.io/jokes/random?category=dev';
         fetch(url)
             .then(response => response.json())
             .then(jokeJson => {
-                //put the text of the joke in the state
-                this.setState({joke: jokeJson.value}, () => {console.log('New joke started');});
+                // Put the text of the joke in state
+                this.setState({joke: jokeJson.value,}, () => {console.log('New joke stored');
+                });
             });
     }
 }
