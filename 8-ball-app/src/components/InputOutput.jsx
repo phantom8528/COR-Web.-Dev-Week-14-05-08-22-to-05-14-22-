@@ -17,7 +17,7 @@ class InputOutput extends React.Component{
                     console.log(event.target.value);
                     }}>
                 </input>
-                <button onClick={this._getAnswer}>Answer</button>
+                <button onClick={this._getAnswer}>Shake</button>
                 <h2>Output goes here</h2>
                 <p>{this.state.text}</p>
 
