@@ -1,0 +1,7 @@
+.EightBall-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+    width: 256px;
+}
